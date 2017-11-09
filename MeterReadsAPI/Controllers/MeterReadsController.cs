@@ -12,8 +12,8 @@ namespace MeterReadsAPI.Controllers
 
         [HttpGet]
         public IActionResult GetMeterReads() {
-            
-            return Ok("Lot's of meter reads .... " + this.meterReads.Count);
+
+            return Ok("Lot's of meter reads .... updated version 2" );
         }
 
         [HttpPost]
