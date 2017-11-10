@@ -1,7 +1,7 @@
 [
   {
     "name": "meterReadsContainer",
-    "image": "dilunika/meter-reads-api:2",
+    "image": "408673749050.dkr.ecr.ap-southeast-2.amazonaws.com/bee-power:1.0.20",
     "cpu": 256,
     "memory": 256,
     "essential": true,

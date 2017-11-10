@@ -2,7 +2,7 @@
 
 # Make sure jq (https://stedolan.github.io/jq/) and terraform is installed in the host machine.
 
-DOCKER_IMAGE=dilunika/meter-reads-api:$1
+DOCKER_IMAGE=408673749050.dkr.ecr.ap-southeast-2.amazonaws.com/bee-power:$1
 
 # 1. Build project
 cd ../MeterReadsAPI && dotnet publish
