@@ -26,3 +26,14 @@ resource "aws_instance" "ecs_nodes" {
               echo "ECS_CLUSTER=${var.ecs_cluster_name}" > /etc/ecs/ecs.config
               EOF
 }
+
+resource "aws_cloudwatch_log_group" "meter_reads_logs" {
+
+    name = "meter-reads-logs"
+
+    tags {
+      Name = "${var.project_accronym}-MeterReads-Logs"
+      Project = "${var.project_name}"
+      Environment = "${var.environment}"
+    }
+}
