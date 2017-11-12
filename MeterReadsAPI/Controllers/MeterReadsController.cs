@@ -12,13 +12,13 @@ namespace MeterReadsAPI.Controllers
 
         public MeterReadsController(ILogger<MeterReadsController> logger) {
             this.logger = logger;
-        } 
+        }
 
         [HttpGet]
         public IActionResult GetMeterReads() {
 
             logger.LogInformation("Reading all meter reads.");
-            return Ok("Lot's of meter reads .... with logs" );
+            return Ok("Lot's of meter reads .... ecr Jenkins Plugin pushed." );
         }
 
         [HttpPost]
