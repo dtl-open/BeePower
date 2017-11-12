@@ -1,5 +1,7 @@
 ContinousDeployment/terraform.tfvars
+ContinousDeployment/terraform.tfstate
 ContinousDeployment/Deployment/.terraform
+ContinousDeployment/Deployment/terraform.tfstate
 # Autosave files
 *~
 
