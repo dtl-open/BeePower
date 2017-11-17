@@ -1,4 +1,6 @@
-#!/bin/bash
+# TODO Need to introduce npm based scripts to make sure windows support.
 
-cd Deployment
-terraform destroy --force --var-file=../terraform.tfvars
+# #!/bin/bash
+#
+# cd Deployment
+# terraform destroy --force --var-file=../terraform.tfvars
