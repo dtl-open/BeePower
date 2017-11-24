@@ -1,7 +1,6 @@
 FROM microsoft/aspnetcore:2
-
+ARG source
 WORKDIR /app
-
-COPY bin/Debug/netcoreapp2.0/publish .
-
+EXPOSE 80
+COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", "MeterReadsAPI.dll"]

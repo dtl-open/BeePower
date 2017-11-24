@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  meterreads.postgresDB:
+    image: postgres
+    container_name: meterreads.postgresDB
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: mra
+    ports:
+      - 5432:5432
+
+  .meterreads.api:
+    image: meterreads.api
+    container_name: meterreads.api
+    build:
+      context: ./MeterReadsAPI
+      dockerfile: Dockerfile
+    links:
+      - meterreads.postgresDB

@@ -1,2 +1,3 @@
 *
-!bin/Debug/netcoreapp2.0/publish/*
+!obj/Docker/publish/*
+!obj/Docker/empty/
